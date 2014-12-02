@@ -1,0 +1,19 @@
+---
+layout: page
+title: blog
+permalink: /blog/
+desc: 關於・について・Introduction
+---
+
+<div class="row">
+
+  <div class="col-sm-8">
+    {% for post in site.categories.note %}
+      {% include page-item.html %}
+    {% endfor %}
+  </div>
+
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
+</div>

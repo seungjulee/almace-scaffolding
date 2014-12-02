@@ -1,7 +1,8 @@
 - title: Home
   url:   /
-  cate:  home
+
+- title: Blog
+  url:   /blog/
 
 - title: About
   url:   /about/
-  cate:  about

@@ -1,34 +1,24 @@
+<!-- Prepare author meta -->
+{% if page.author %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.data.authors["default"] %}
+{% endif %}
+
 <!-- List snippets -->
-<section class=list {% if post.lang %} lang={{ post.lang }}{% endif %}>
-  <h1>
-    <!-- Dynamic link color based on post color scheme -->
-    {% capture post_link_color %}
-      {% if post.scheme-bg %}
-        {% if post.scheme-bg-light %}
-          style="color: {{ post.scheme-text }};"
-        {% else %}
-          style="color: {{ post.scheme-bg }};"
-        {% endif %}
-      {% endif %}
-    {% endcapture %}
+<section class="blog-post" {% if post.lang %} lang={{ post.lang }}{% endif %}>
+  <h2 class="blog-post-title">
+    <a href="{{ post.url | prepend: site.base }}">{{ post.title }}</a>
+  </h2>
 
-    <!-- Dynamic background color based on post color scheme -->
-    {% capture post_link_bg %}
-      {% if post.scheme-bg %}
-        {% if post.scheme-bg-light %}
-          style="background: {{ post.scheme-text }};"
-        {% else %}
-          style="background: {{ post.scheme-bg }};"
-        {% endif %}
-      {% endif %}
-    {% endcapture %}
+  <div class="blog-post-meta">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+    by
+    <span rel=author>{{ author.name }}</span>
+  </div>
 
-    <!-- Item title -->
-    <a href="{{ post.url | prepend: site.base }}" {% if site.colorful_list %}{{ post_link_color }}{% endif %}>{{ post.title }}</a>
+  <div class="blog-post-content">
+    {{ post.content }}
+  </div>
 
-    <!-- External link indicator -->
-    {% if post.link %}
-      <a href="{{ post.link }}" class=external><span {% if site.colorful_list %}{{ post_link_bg }}{% endif %}></span></a>
-    {% endif %}
-  </h1>
 </section>
