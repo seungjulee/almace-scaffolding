@@ -50,11 +50,30 @@ $(function() {
     paginationClickable: true,
     createPagination: true,
 
-    // Plugins
-    hashNav: true,
+    // Plugins Hash Navigation
+    // hashNav: true,
+
+    // Plugins Smooth Progress
+    progress: true,
+    onProgressChange: function(swiper) {
+      // Plugin adds "progress" property to each slide and common "progress" property for swiper
+      for (var i = 0; i < swiper.slides.length; i++) {
+        var slide = swiper.slides[i];
+        var slideProgress = slide.progress;
+        //Do something depending on slideProgress
+      }
+      var swiperProgress = swiper.progress
+      //Do something with common swiper progress
+    },
 
     onSlideChangeStart: function(swiper) {
-      // alert('Hello 1');
+      // Remove all "swiper-*" class before append new class
+      $("body").removeClass (function(i, css) {
+        return (css.match (/(^|\s)swiper-active-\S+/g) || []).join(' ');
+      }).addClass("swiper-active-" + (mySwiper.activeIndex + 1));
+    },
+
+    onSlideChangeEnd: function(swiper) {
     }
   });
 
