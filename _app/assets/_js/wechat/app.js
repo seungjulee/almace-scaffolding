@@ -51,7 +51,7 @@ $(function() {
     createPagination: true,
 
     // Plugins
-    hashNav: false,
+    hashNav: true,
 
     onSlideChangeStart: function(swiper) {
       // alert('Hello 1');
