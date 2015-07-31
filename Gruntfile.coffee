@@ -195,9 +195,9 @@ module.exports = (grunt) ->
 
         files: [
           expand: true
-          cwd: "<%= config.dist %>/assets/css/"
+          cwd: "<%= config.dist %>"
           src: ["**/*.css", "!*.min.css"]
-          dest: "<%= config.dist %>/assets/css/"
+          dest: "<%= config.dist %>/"
         ]
 
       # html:
@@ -211,6 +211,7 @@ module.exports = (grunt) ->
         jsDir: "<%= config.dist %>"
         cssDir: "<%= config.dist %>"
         includeTag: "[data-inline]"
+        assetsUrlPrefix: "<%= config.base %>/assets/"
 
       dist:
         files: [
@@ -242,7 +243,7 @@ module.exports = (grunt) ->
       dist:
         options:
           config: "_config.yml"
-          dest: "<%= config.dist %>/<%= config.base %>"
+          dest: "<%= config.dist %><%= config.base %>"
 
     shell:
       options:
