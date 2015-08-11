@@ -14,8 +14,9 @@ Go to the [GitHub](https://github.com/sparanoid/almace-scaffolding) page for dow
 
 ## Features
 
+- Theme switching, you can switch themes with just one command
 - A basic, fully configured Jekyll setup with well-defined [Atom feed](https://github.com/sparanoid/almace-scaffolding/blob/master/_app/feed-atom.xml), [sitemap](https://github.com/sparanoid/almace-scaffolding/blob/master/_app/sitemap.xml), and [Twitter Cards](https://dev.twitter.com/docs/cards) support
-- **Almace Scaffolding** ships a sleek responsive theme, a variant of [sparanoid.com](http://sparanoid.com/), looking great on any mordern browsers
+- **Almace Scaffolding** ships a sleek responsive theme [Curtana](https://github.com/sparanoid/amsf-curtana), a variant of [sparanoid.com](http://sparanoid.com/), looking great on any mordern browsers
 - Every minified page generates only one HTTP request [^1]
 - Minimalism design, No jQuery, no `everybody-shake-ur-body.js`
 - Ideal for personal blog, portfolio, product blog and Tumblr-like link blog
