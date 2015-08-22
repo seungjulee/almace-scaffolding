@@ -1,19 +1,50 @@
 ---
 layout: page
-title: About
+title: SJ Lee
 permalink: /about/
-desc: 關於・について・Introduction
+desc: SeungJu Lee ・ 이승주 ・ 李丞柱
 ---
 
-This is an example About page.
+SJ loves the flow.
 
-Sparanoid is a one-man design studio operated by Tunghsiao Liu, currently located in China. You can ping me on [Twitter](http://twitter.com/tunghsiao) or send correspondence to [t@sparanoid.com](mailto:t@sparanoid.com).
+<section class="list">
+	<h1>
+	  <a href="mailto:me@sjlee.me">
+	    Email
+	  </a>
+	</h1>
+</section>
+<section class="list">
+	<h1>
+	  <a href="http://linkedin.com/in/seungjulee">
+	    LinkedIn
+	  </a>
+	</h1>
+</section>
+<section class="list">
+	<h1>
+	  <a href="https://s3-us-west-2.amazonaws.com/sjlee-me/resume/Resume-SJ_Lee.pdf">
+	    Resume
+	  </a>
+	</h1>
+</section>
+<section class="list">
+	<h1>
+	  <a href="http://github.com/seungjulee">
+	    GitHub
+	  </a>
+	</h1>
+</section>
+<section class="list">
+	<h1>
+	  <a href="http://facebook.com/alongwiththeflow">
+	    Facebook
+	  </a>
+	</h1>
+</section>
 
-## Colophon
-
-[<abbr title="Almace Scaffolding">AMSF</abbr>](http://sparanoid.com/lab/amsf/) ([Source](http://github.com/sparanoid/sparanoid.com)) -
-[GitHub](http://github.com/) -
-[CloudFront](http://aws.amazon.com/cloudfront/) -
-[Textmate](http://macromates.com/)
-
-All posts are &copy; Tunghsiao Liu, all rights reserved. The views expressed on this site are mine alone and not those of my employers and clients, past and present.
+<!-- <p>[Email](mailto:me@sjlee.me)</p>
+<p>[Twitter](http://twitter.com/seungjusjlee)</p>
+[Facebook](http//fb.com/alongwiththeflow)
+[GitHub](http://github.com/seungjulee) 
+ -->

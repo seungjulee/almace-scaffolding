@@ -1,9 +1,10 @@
 // Global variables
 @base-font-size: 1.6vw;
 @base-line-height: (20 / 14); // ~ 1.428571429
-@link-color: #a212d1;
-@background-color: #fff;
-@text-color: #000;
+// @link-color: #a212d1;
+@background-color: #111;
+@text-color: #D2B48C;
+@link-color: #D2B48C;
 @code-color: spin(@link-color, 180);
 @sans-serif: "Helvetica Neue", Arial, "Hiragino Sans GB", sans-serif;
 @serif: Georgia, "Hiragino Mincho ProN", serif;
@@ -86,7 +87,7 @@ body {
     pointer-events: none;
     background: @link-color;
     content: "";
-    opacity: .2;
+    opacity: .3;
   }
 }
 
@@ -173,7 +174,7 @@ del {
   &:hover,
   &:focus {
     border-bottom: none !important;
-    background: @text-color;
+    background: @link-color;
     opacity: 1;
   }
 
@@ -185,7 +186,8 @@ del {
 
 // Main navigation
 .navigation {
-  margin: 0 0 16vmin;
+  // margin 
+  margin: 0 0 8vmin;
   margin-right: -1.1em;
   margin-left: -1.1em;
   font-size: 60%;
@@ -317,7 +319,8 @@ body:hover .latest {
   }
 
   header {
-    padding-bottom: 16vmin;
+    // margin change
+    padding-bottom: 8vmin;
 
     h1 {
       margin: 0 0 .1em;
@@ -372,8 +375,9 @@ body:hover .latest {
 
   }
 
+  // margin
   h2, h3, h4, h5, h6 {
-    margin: 10vmin 0 1rem;
+    margin: 5vmin 0 1rem;
     .sub-heading;
   }
 

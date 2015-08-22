@@ -12,10 +12,33 @@
 // Change @link-color can change to whole theme color scheme
 // All other vaiables in `app.less` can be overwritten here
 
-// tan #D2B48C rgb(210,180,140)
-// @link-color: darken(@background-color, 50%);
-// @background-color: tan;
-// @text-color: darken(@background-color, 30%);
+/*tan #D2B48C rgb(210,180,140)
+@link-color: darken(@background-color, 50%);
+@background-color: tan;
+@text-color: darken(@background-color, 30%);*/
+
+// amsf.github.io color scheme
+
+// @default-color: #ff00b4;
+// @mediumvioletred: #C71585;
+// orangered #FF4500 rgb(255,69,0)
+// indigo (invert) #4B0082 rgb(75,0,130)
+// indigo #4B0082 rgb(75,0,130)
+// @limegreen: #32CD32;
+
+// crimson #DC143C rgb(220,20,60) × gold #FFD700 rgb(255,215,0)
+// @link-color: crimson;
+// @background-color: gold;
+// @text-color: #000;
+// 2980b9
+
+@peterriver: #2980b9;
+@sel-color: @peterriver;
+
+@link-color: @sel-color;
+@background-color: #fff;
+@text-color: #000;
+@code-color: darken(spin(@link-color, 200), 10%);
 
 // mediumvioletred #C71585 rgb(199,21,133)
 // @link-color: mediumvioletred;
@@ -60,7 +83,7 @@
 // Alternative title color switch
 // Uncomment the following style will enalbe alternative post title color, this is useful when you're using the custom theme from above.
 // .content { .list h2 a, header h1, header h1 a { color: @link-color; } }
-// .external span { background: @link-color; }
+.external span { background: @link-color; }
 
 // Alternative title size
 // By default all heading levels have the same font size, but many people may not like this, so here's an alternative font size stack:
@@ -71,12 +94,6 @@
   h5 { font-size: 72%;  opacity: .5; }
   h6 { font-size: 60%;  opacity: .4; }
 }
-
-// amsf.github.io color scheme
-@link-color: #ff00b4;
-@background-color: #fff;
-@text-color: #000;
-@code-color: darken(spin(@link-color, 200), 10%);
 
 // amsf.github.io homepage logo
 .amsf-logo {
