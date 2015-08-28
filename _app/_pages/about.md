@@ -16,15 +16,15 @@ SJ loves the flow.
 </section>
 <section class="list">
 	<h1>
-	  <a href="http://linkedin.com/in/seungjulee">
-	    LinkedIn
+	  <a href="https://twitter.com/seungjusjlee">
+	    Twitter
 	  </a>
 	</h1>
 </section>
 <section class="list">
 	<h1>
-	  <a href="https://s3-us-west-2.amazonaws.com/sjlee-me/resume/Resume-SJ_Lee.pdf">
-	    Resume
+	  <a href="http://linkedin.com/in/seungjulee">
+	    LinkedIn
 	  </a>
 	</h1>
 </section>
@@ -37,12 +37,25 @@ SJ loves the flow.
 </section>
 <section class="list">
 	<h1>
+	  <a href="https://s3-us-west-2.amazonaws.com/sjlee-me/resume/Resume-SJ_Lee.pdf">
+	    Resume
+	  </a>
+	</h1>
+</section>
+<section class="list">
+	<h1>
 	  <a href="http://facebook.com/alongwiththeflow">
 	    Facebook
 	  </a>
 	</h1>
 </section>
-
+<section class="list">
+	<h1>
+	  <a href="http://soundcloud.com/alongwiththeflow/likes">
+	    Playlist
+	  </a>
+	</h1>
+</section>
 <!-- <p>[Email](mailto:me@sjlee.me)</p>
 <p>[Twitter](http://twitter.com/seungjusjlee)</p>
 [Facebook](http//fb.com/alongwiththeflow)
